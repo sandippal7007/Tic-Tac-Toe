@@ -5,7 +5,6 @@ The project is built using React.js, Express.js, Redis, Ngrok
 
 Steps
 -------------
-> **Note:**
 
 > - `npm install` to install dependencies.
 > - Download Redis and run `redis-server` from the downloaded location locally.
