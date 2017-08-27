@@ -8,5 +8,9 @@ Steps
 > **Note:**
 
 > - `npm install` to install dependencies.
-> - 
-> - Clearing your browser's data may **delete all your local documents!** Make sure your documents are synchronized with **Google Drive** or **Dropbox** (check out the [<i class="icon-refresh"></i> Synchronization](#synchronization) section).
+> - Download Redis and run `redis-server` from the downloaded location locally.
+> - Run your UI server via `npm start`. It will start in `localhost:8080`
+> - Run your node server via `node app.dev.js`. It will start in `localhost:3000`.
+> - I am using ngrok to host my application. To host ngrok for UI server: `./ngrok http -host-header=localhost 8080` and for backend node server `./ngrok http -host-header=localhost 3000`. Now you will get application URL(UI) to share with your friend. Use the https one.
+> - Remember to change the variable(backendURL in App.js) as the url you got from ngrok backend server(use the https one). You have to do this step everytime as the url changes when you stop the server.
+> - Now you are all set to play the game.
